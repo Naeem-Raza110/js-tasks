@@ -1,19 +1,11 @@
+alert("hello");
 // varibles
-
-
-
-
 
 // arthmartic opperators
 
 
 let Sudent_Data =5 ;
 let b =3 ;
-
-
-
-
-
 
 // add
 // sub  
@@ -22,10 +14,9 @@ let b =3 ;
 // exponent
 // modules
 
-
-
 console.log("a%b" , a%b);
 
+let 
 
 
 
