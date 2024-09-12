@@ -16,6 +16,31 @@ if (age >= 18) {
     
 }
 
+//switch statment
+
+let day= 10;
+
+switch (day) {
+case 0:
+    console.log(monday);
+break;
+
+case 1:
+    console.log(monday);
+break;
+
+case 2:
+   console.log(monday);
+   break;   
+
+}
+
+
+
+
+function toggleMode() {
+ if 
+}
 
 
 
