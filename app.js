@@ -1,34 +1,20 @@
-alert("hello");
-// varibles
+let num = prompt("Enter a number:");
 
-// arthmartic opperators
+if (num % 5 === 0){
+    console.log(num, " is multiple of 5");
+    
+}else{
+    console.log(num, " is not multiple of 5");
+}
 
+let age= 20;
 
-let Sudent_Data =5 ;
-let b =3 ;
-
-// add
-// sub  
-// multifiication
-//division
-// exponent
-// modules
-
-console.log("a%b" , a%b);
-
-let 
-
-
-
-
-
-
-
-
-
-
-
-
+if (age >= 18) {
+    console.log( "you can cast vote" );
+}else{
+    console.log( "you cannot cast vote" );
+    
+}
 
 
 
