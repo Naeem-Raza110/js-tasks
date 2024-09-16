@@ -1,3 +1,12 @@
+// function toggleMode() {
+//   if (document.body.classList.contains("dark-mode")) {
+// //     document.body.classList.remove("dark-mode");
+// //     document.body.classList.add("light-mode");
+// //   } else {
+// //     document.body.classList.add("dark-mode");
+// //     document.body.classList.remove("light-mode");
+// //   }
+// }
 //conditional  statemnts
         // -> if statment  0dd/even
         // else // false  statment ka leya istamal hota ha
@@ -57,38 +66,38 @@
 // }
 
 // tarnary oprators ---.compact
-let num = prompt("Enter a number")
-let result = num % 5 == 0 ?  console.log(num, " is multiple of 5") :  console.log(num, " is not multiple of 5");
+// let num = prompt("Enter a number")
+// let result = num % 5 == 0 ?  console.log(num, " is multiple of 5") :  console.log(num, " is not multiple of 5");
 
 
 
 //switch statment
-let day = 1;
-switch (day) {
-  case 1:
-    console.log("sunday");
-    break;
-  case 2:
-    console.log("monday");
-    break;
-  case 3:
-    console.log("tuesday");
-    break;
-  case 4:
-    console.log("wednesday");
-    break;
-  case 5:
-    console.log("thursday");
-    break;
-  case 6:
-    console.log("friday");
-    break;
-  case 7:
-    console.log("saturday");
-    break;
-  default:
-    console.log("invalid day");
-}
+// let day = 1;
+// switch (day) {
+//   case 1:
+//     console.log("sunday");
+//     break;
+//   case 2:
+//     console.log("monday");
+//     break;
+//   case 3:
+//     console.log("tuesday");
+//     break;
+//   case 4:
+//     console.log("wednesday");
+//     break;
+//   case 5:
+//     console.log("thursday");
+//     break;
+//   case 6:
+//     console.log("friday");
+//     break;
+//   case 7:
+//     console.log("saturday");
+//     break;
+//   default:
+//     console.log("invalid day");
+// }
 
 
 // <!DOCTYPE html>
@@ -205,5 +214,98 @@ switch (day) {
 
 
 
-//loops
 
+/////////////loops //////
+// let num = 0 ;
+// for (let i = 1; i <= 5; i++) {
+//   num += i;
+// }
+// console.log(num);
+// while loop//
+// let i = 1;
+// while (i <= 5) {
+//   console.log(i);
+//   i++;
+// }
+// do while loop
+// let i = 0;
+// do {
+//   console.log(i);
+//   i++;
+// } while (i <= 6);
+//for in loop // string or arry use karta haa
+// const obj = {a: 1, b: 4, c: 7};
+// for (let prop in obj) {
+//   console.log(prop + ': ' + obj[prop]);
+// }
+/// for of loop  ////  use karta ha object ka leya istamal hota ha
+//  const arr = {
+//   name : "sami",
+//   age : 22 ,
+//   clss : "10th"
+//  };
+//  for (let val in arr) {
+//    console.log(val);
+//  }
+// for of loop
+// const arr = [1, 2, 3];
+// for (let val of arr) {
+//   console.log(val);
+// }
+// let string = "hello";
+// for (let val of string) {
+//   console.log(val);
+// }
+// condation in loop/// task
+//
+//example2//m block scope and global scope
+// let sum =0;
+// for (let i = 1; i <= 5; i++) {
+//   sum += i;
+//   console.log(i);
+// }
+// let  i = 1;
+// while(i <= 5) {
+//   console.log(i);
+//   i++;
+// }
+// do loop
+// let i = 1;
+// do {
+//   console.log(i); /// sami collen lazmi ha .
+//   i++;
+// } while (i <= 5);
+// dowhile loop
+//  let i = 0;
+//  do {
+//    console.log(i);
+//   i++;
+//  } while (i <= 6);
+
+// Q-1-print all even number form 0 to 100
+
+
+// let num = 0;
+// for (let i = 1; i <= 100;  i++) {
+//   if(i % 2 == 0) {
+//      console.log("even number" , i);
+//   }else (i % 2 !== 0)  
+//   {
+//     console.log( "old number" , i);
+//   }
+  
+// }
+
+
+let num = Number(prompt("Enter a first  number:"));
+let num2 = Number(prompt("Enter a second number"));
+if ((num) && (num2)){
+    console.log(num + num2);
+}
+
+// let num = (prompt("Enter the first number:"));
+// let num2 =(prompt("Enter the second number:"));
+
+// let result  = Number(num) + Number(num2)
+// alert(result);
+ 
