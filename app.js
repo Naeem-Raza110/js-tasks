@@ -8,16 +8,16 @@
 // //   }
 // }
 //conditional  statemnts
-        // -> if statment  0dd/even
-        // else // false  statment ka leya istamal hota ha
-        // -> else if  statment -->
-        // switch statment --> excute karna ka leyu istamal hota ha
-        // tarnary oprators ---.compact
-        //a? b:c
-        // used to perform d/f action on the based of d/f condation //
-        //prompt
-        // alert
- //if else
+// -> if statment  0dd/even
+// else // false  statment ka leya istamal hota ha
+// -> else if  statment -->
+// switch statment --> excute karna ka leyu istamal hota ha
+// tarnary oprators ---.compact
+//a? b:c
+// used to perform d/f action on the based of d/f condation //
+//prompt
+// alert
+//if else
 //  let age= 17;
 //  if (age >= 18) {
 //    console.log( "you can cast the vote");//
@@ -51,7 +51,7 @@
 
 // if (num % 5 === 0){
 //     console.log(num, " is multiple of 5");
-    
+
 // }else{
 //     console.log(num, " is not multiple of 5");
 // }
@@ -62,7 +62,7 @@
 //     console.log( "you can cast vote" );
 // }else{
 //     console.log( "you cannot cast vote" );
-    
+
 // }
 
 // tarnary oprators ---.compact
@@ -293,7 +293,7 @@
 //   {
 //     console.log( "old number" , i);
 //   }
-  
+
 // }
 
 
@@ -302,12 +302,11 @@
 // if ((num) && (num2)){
 //     console.log(num + num2);
 // }
-
+//or
 // let num = (prompt("Enter the first number:"));
-// let oprators = (prompt("Enter oprator"))
 // let num2 =(prompt("Enter the second number:"));
 
-// let result  = Number(num) Option(oprators),  Number(num2)
+// let result  = Number(num) +  Number(num2)
 // alert(result);
 
 let num1 = Number(prompt("Enter the first number:"));
@@ -317,16 +316,18 @@ let num2 = Number(prompt("Enter the second number:"));
 let result;
 
 switch (operator) {
-  case '+':~
+  case '+':
     result = num1 + num2;
     break;
   case '-':
     result = num1 - num2;
     break;
   case '*':
-   result = num1 * num2;
-   break;
-   case "/":
+    result = num1 * num2;
+    break;
+  case "/":
     result = num1 / num2;
 
-}alert(result);
+}
+alert(result);
+
