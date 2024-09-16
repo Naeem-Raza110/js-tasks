@@ -297,15 +297,36 @@
 // }
 
 
-let num = Number(prompt("Enter a first  number:"));
-let num2 = Number(prompt("Enter a second number"));
-if ((num) && (num2)){
-    console.log(num + num2);
-}
+// let num = Number(prompt("Enter a first  number:"));
+// let num2 = Number(prompt("Enter a second number"));
+// if ((num) && (num2)){
+//     console.log(num + num2);
+// }
 
 // let num = (prompt("Enter the first number:"));
+// let oprators = (prompt("Enter oprator"))
 // let num2 =(prompt("Enter the second number:"));
 
-// let result  = Number(num) + Number(num2)
+// let result  = Number(num) Option(oprators),  Number(num2)
 // alert(result);
- 
+
+let num1 = Number(prompt("Enter the first number:"));
+let operator = prompt("Enter operator");
+let num2 = Number(prompt("Enter the second number:"));
+
+let result;
+
+switch (operator) {
+  case '+':~
+    result = num1 + num2;
+    break;
+  case '-':
+    result = num1 - num2;
+    break;
+  case '*':
+   result = num1 * num2;
+   break;
+   case "/":
+    result = num1 / num2;
+
+}alert(result);
