@@ -196,15 +196,7 @@
 //     console.log("invalid day");
 //     break;
 // }
-// function toggleMode() {
-//   if (document.body.classList.contains("dark-mode")) {
-//     document.body.classList.remove("dark-mode");
-//     document.body.classList.add("light-mode");
-//   } else {
-//     document.body.classList.add("dark-mode");
-//     document.body.classList.remove("light-mode");
-//   }
-// }
+
 // let num = prompt("enter the number");
 // let result =
 //   num % 5 == 0
@@ -376,20 +368,20 @@
 // console.log(text3);
 
 //example (add concat and length)
-//  let  text1 = prompt("Enter your name");
-//  let text2 = "@";
-//  let text3 = text2.concat(text1)
-//  let text4 = text1.length;
-//  alert(text3.concat(text4)); //or alert (text3.tex4)
+ let  text1 = prompt("Enter your name");
+ let text2 = "@";
+ let text3 = text2.concat(text1)
+ let text4 = text1.length;
+ alert(text3.concat(text4)); //or alert (text3.tex4)
  
 
  
 
 // 6.trim string (trim string ma qutision or word ka dirman space ko khatam karta ha)
-// let str = " Hello, World!   ";
-// let trimmedStr = str.trim();
+let str = " Hello, World!   ";
+let trimmedStr = str.trim();
 
-// console.log(trimmedStr); 
+console.log(trimmedStr); 
 
 
 let students = ["ali", "naeem", "nadeem"]
