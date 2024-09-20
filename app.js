@@ -393,5 +393,5 @@
 
 
 let students = ["ali", "naeem", "nadeem"]
-l
+
 console.log(students.toString);
