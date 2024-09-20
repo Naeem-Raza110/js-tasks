@@ -309,25 +309,89 @@
 // let result  = Number(num) +  Number(num2)
 // alert(result);
 
-let num1 = Number(prompt("Enter the first number:"));
-let operator = prompt("Enter operator");
-let num2 = Number(prompt("Enter the second number:"));
+// let num1 = Number(prompt("Enter the first number:"));
+// let operator = prompt("Enter operator");
+// let num2 = Number(prompt("Enter the second number:"));
 
-let result;
+// let result;
 
-switch (operator) {
-  case '+':
-    result = num1 + num2;
-    break;
-  case '-':
-    result = num1 - num2;
-    break;
-  case '*':
-    result = num1 * num2;
-    break;
-  case "/":
-    result = num1 / num2;
+// switch (operator) {
+//   case '+':
+//     result = num1 + num2;
+//     break;
+//   case '-':
+//     result = num1 - num2;
+//     break;
+//   case '*':
+//     result = num1 * num2;
+//     break;
+//   case "/":
+//     result = num1 / num2;
 
-}
-alert(result);
+// }
+// alert(result);
 
+// let num = "i love you";
+// for (let i = 1; i <= 100; i++) {
+//   console.log(i + ": " + num);
+// }
+
+// let obj ={
+//     name :"kash",
+//     number:123,
+//     age:19,
+// }
+// console.log(`name = ${obj.name}`)
+
+///String Methods
+
+// 1 .String length (is ma array ma sa one by one count karta ha )
+// let text = ["fdhkv", "fss", "lkh"];
+// let length = text.length;
+// console.log(length);
+
+// let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";(ya indexes ma kitna num ha count karta ha)
+// let length = text.length;
+// console.log(length);
+
+//2.String charAt()  ()
+// let text = "HELLO WORLD";
+// let char = text.charAt(2);
+// console.log(char);
+
+/// 3.String Slice   (slice indexes ma jo num dia ha us sa phela wala nhi lata ha)
+// let text = "fsfBananaKiwi";
+// let part = text.slice(5);
+// console.log(part);
+
+// 4.at string (postive or negtive indexes karta ha)
+// const name = "W3Schools";
+// let letter = name.at(-1);
+// console.log(letter);
+
+// 5.concat string (ya two variables ko add karta ha)
+// let text1 = "Hello";
+// let text2 = "kjhgfd";
+// let text3 = text2.concat( text1);
+// console.log(text3);
+
+//example (add concat and length)
+//  let  text1 = prompt("Enter your name");
+//  let text2 = "@";
+//  let text3 = text2.concat(text1)
+//  let text4 = text1.length;
+//  alert(text3.concat(text4)); //or alert (text3.tex4)
+ 
+
+ 
+
+// 6.trim string (trim string ma qutision or word ka dirman space ko khatam karta ha)
+// let str = " Hello, World!   ";
+// let trimmedStr = str.trim();
+
+// console.log(trimmedStr); 
+
+
+let students = ["ali", "naeem", "nadeem"]
+l
+console.log(students.toString);
