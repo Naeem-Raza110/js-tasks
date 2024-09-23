@@ -387,3 +387,8 @@
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // let = fruits.push("Kiwi");
 // alert(fruits)
+
+ ///3.Array copyWithin()
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.copyWithin(2, 0);
+// console.log(fruits);
