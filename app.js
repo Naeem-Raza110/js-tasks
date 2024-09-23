@@ -1,49 +1,41 @@
-// function toggleMode() {
-//   if (document.body.classList.contains("dark-mode")) {
-// //     document.body.classList.remove("dark-mode");
-// //     document.body.classList.add("light-mode");
-// //   } else {
-// //     document.body.classList.add("dark-mode");
-// //     document.body.classList.remove("light-mode");
-// //   }
-// }
 //conditional  statemnts
-// -> if statment  0dd/even
+// if statment  0dd/even
 // else // false  statment ka leya istamal hota ha
 // -> else if  statment -->
 // switch statment --> excute karna ka leyu istamal hota ha
 // tarnary oprators ---.compact
-//a? b:c
+// a? b:c
 // used to perform d/f action on the based of d/f condation //
 //prompt
 // alert
 //if else
 //  let age= 17;
 //  if (age >= 18) {
-//    console.log( "you can cast the vote");//
+//    console.log( "you can cast the vote");
 //  }else{
-//    console.log("you can not cost the vote ");}//
+//    console.log("you can not cost the vote ");}
+//    ///2.
 //    let data = 15;
 //    if (data % 2 == 0){
 //      console.log("even");
 //    }else{
 //      console.log("odd");
 //    }
-//    let mode = "purple";
-//    let color;
-//    if (mode == "light"){
-//      color = "yellow";
-//      console.log("yellow ")
-//    }else if (mode == "red"){
-//        color = "red"
-//        console.log( color," red")
-//    }else if (mode == "green"){
-//      color = "red"
-//      console.log( color," green")
-//    }else {
-//      color = "white"
-//      console.log("white ")
-//    };
+  //  let mode = "purple";
+  //  let color;
+  //  if (mode == "light"){
+  //    color = "yellow";
+  //    console.log("yellow ")
+  //  }else if (mode == "red"){
+  //      color = "red"
+  //      console.log( color," red")
+  //  }else if (mode == "green"){
+  //    color = "red"
+  //    console.log( color," green")
+  //  }else {
+  //    color = "white"
+  //    console.log("white ")
+  //  };
 
 
 
@@ -368,22 +360,30 @@
 // console.log(text3);
 
 //example (add concat and length)
- let  text1 = prompt("Enter your name");
- let text2 = "@";
- let text3 = text2.concat(text1)
- let text4 = text1.length;
- alert(text3.concat(text4)); //or alert (text3.tex4)
+//  let  text1 = prompt("Enter your name");
+//  let text2 = "@";
+//  let text3 = text2.concat(text1)
+//  let text4 = text1.length;
+//  alert(text3.concat(text4)); //or alert (text3.tex4)
  
 
  
 
 // 6.trim string (trim string ma qutision or word ka dirman space ko khatam karta ha)
-let str = " Hello, World!   ";
-let trimmedStr = str.trim();
+// let str = " Hello, World!   ";
+// let trimmedStr = str.trim();
 
-console.log(trimmedStr); 
+// console.log(trimmedStr); 
 
 
-let students = ["ali", "naeem", "nadeem"]
 
-console.log(students.toString);
+////Array methods
+//1. tostring method
+// let students = ["ali", "naeem", "nadeem"]
+
+// console.log(students.toString);
+
+//2.push method
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let = fruits.push("Kiwi");
+// alert(fruits)
