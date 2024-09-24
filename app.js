@@ -397,7 +397,7 @@
 
 
 ////function 
-///add to numbers
+///1.add to numbers
 // function myfunction(a, b) {
 //   return a + b ;
 // }
@@ -409,10 +409,25 @@
 
 // console.log(add);
 
-///multiply two numbers
-function multiplyNumbers(a, b) {
-return a * b ;
-}
+///2.multiply two numbers
+// function multiplyNumbers(a, b) {
+// return a * b  ;
+// }
+// console.log(multiplyNumbers(4, 5)); 
+//3. convertMinutesToSeconds
+// function convertMinutesToSeconds(minutes) {
+//   const seconds = minutes * 60;
+//   return seconds; 
+// }
 
-console.log(multiplyNumbers(4, 5)); 
+// console.log(convertMinutesToSeconds(1));
+// console.log(convertMinutesToSeconds(2)); 
+
+//4.finds the largest 
+// function findLargestNumber(a, b, c, e) {
+//   const largest = Math.max(a, b, c, e);
+//   return largest; 
+// }
+// console.log(findLargestNumber(3, 9, 6, 4));
+// console.log(findLargestNumber(15, 8, 12, 5)); 
 
