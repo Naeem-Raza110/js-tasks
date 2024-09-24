@@ -392,3 +392,19 @@
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // fruits.copyWithin(2, 0);
 // console.log(fruits);
+
+
+
+
+////function 
+
+function myfunction(a, b) {
+  return a + b ;
+}
+let result = myfunction(6, 5);
+
+console.log(result);
+
+let add = myfunction(4, -5)
+console.log(add);
+
