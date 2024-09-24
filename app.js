@@ -397,14 +397,22 @@
 
 
 ////function 
+///add to numbers
+// function myfunction(a, b) {
+//   return a + b ;
+// }
+// let result = myfunction(6, 5);
 
-function myfunction(a, b) {
-  return a + b ;
+// console.log(result);
+
+// let add = myfunction(4, -5)
+
+// console.log(add);
+
+///multiply two numbers
+function multiplyNumbers(a, b) {
+return a * b ;
 }
-let result = myfunction(6, 5);
 
-console.log(result);
-
-let add = myfunction(4, -5)
-console.log(add);
+console.log(multiplyNumbers(4, 5)); 
 
