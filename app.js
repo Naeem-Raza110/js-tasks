@@ -431,3 +431,47 @@
 // console.log(findLargestNumber(3, 9, 6, 4));
 // console.log(findLargestNumber(15, 8, 12, 5)); 
 
+
+///arrrow function
+
+
+// function arriow = (a, b, c, e) => {
+//   let largest = Math.max(a, b, c, e);
+//   return largest; 
+// }
+// console.log(findLargestNumber(3, 9, 6, 4));
+// console.log(findLargestNumber(15, 8, 12, 5)); 
+
+
+// function countVowels(str) {
+//   const vowels = 'aeiouAEIOU';
+//   let count = 0;
+
+//   for (let char of str) {
+//     if (vowels.includes(char)) {
+//       count++;
+//     }
+//   }
+
+//   return count;
+// }
+// console.log(countVowels("Hello World")); 
+
+
+
+
+
+const countVowelsArrow = (str) => {
+  const vowels = 'aeiouAEIOU';
+  let count = 0;
+
+  for (let char of str) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+
+  return count;
+}
+console.log(countVowelsArrow("Hello World")); 
+
