@@ -443,35 +443,48 @@
 // console.log(findLargestNumber(15, 8, 12, 5)); 
 
 
-function countVowels(str) {
-  const vowels = 'aeiouAEIOU';
-  let count = 0;
+// function countVowels(str) {
+//   const vowels = 'aeiouAEIOU';
+//   let count = 0;
 
+//   for (let char of str) {
+//     if (vowels.includes(char)) {
+//       count++;
+//     }
+//   }
+
+//   return count;
+// }
+// console.log(countVowels("Hello World")); 
+
+function getVowels(str) {
+  let vowelsInString = '';
+  const vowels = "aeiouAEIOU";
+  
   for (let char of str) {
-    if (vowels.includes(char)) {
-      count++;
-    }
+      if (vowels.includes(char)) {
+          vowelsInString += char;
+      }
   }
-
-  return count;
+  return vowelsInString;
 }
-console.log(countVowels("Hello World")); 
+
+console.log(getVowels("Hello World"));  
 
 
 
 
+// const countVowelsArrow = (str) => {
+//   const vowels = 'aeiouAEIOU';
+//   let count = 0;
 
-const countVowelsArrow = (str) => {
-  const vowels = 'aeiouAEIOU';
-  let count = 0;
+//   for (let char of str) {
+//     if (vowels.includes(char)) {
+//       count++;
+//     }
+//   }
 
-  for (let char of str) {
-    if (vowels.includes(char)) {
-      count++;
-    }
-  }
-
-  return count;
-}
-console.log(countVowelsArrow("Hello World")); 
+//   return count;
+// }
+// console.log(countVowelsArrow("Hello World")); 
 
