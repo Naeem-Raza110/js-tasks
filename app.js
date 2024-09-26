@@ -472,17 +472,36 @@
 // }
 // console.log(countVowelsArrow("Hello World"));
 
+// function getVowels(str) {
+//   let vowelsInString = '';
+//   const vowels = "aeiouAEIOU";
+//   for (let char of str) {
+//       if (vowels.includes(char)) {
+//           vowelsInString += char;
+          
+//       }
+//   }
+//   return vowelsInString;
+// }
+
 function getVowels(str) {
   let vowelsInString = '';
-  const vowels = "aeiouAEIOU";
   for (let char of str) {
-      if (vowels.includes(char)) {
-          vowelsInString += char;
-      }
+    
+    if (
+      char === 'a' || char === 'e' || char === 'i' || 
+      char === 'o' || char === 'u' || char === 'A' || 
+      char === 'E' || char === 'I' || char === 'O' || 
+      char === 'U'
+    ) {
+      vowelsInString += char;  // Concatenation happens here
+    }
   }
   return vowelsInString;
 }
 
-console.log(getVowels("Hello World"));  
+console.log(getVowels("Hello World"));
+
+
 
 
