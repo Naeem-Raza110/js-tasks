@@ -457,23 +457,7 @@
 // }
 // console.log(countVowels("Hello World")); 
 
-function getVowels(str) {
-  let vowelsInString = '';
-  const vowels = "aeiouAEIOU";
-  
-  for (let char of str) {
-      if (vowels.includes(char)) {
-          vowelsInString += char;
-      }
-  }
-  return vowelsInString;
-}
-
-console.log(getVowels("Hello World"));  
-
-
-
-
+///arrow function :
 // const countVowelsArrow = (str) => {
 //   const vowels = 'aeiouAEIOU';
 //   let count = 0;
@@ -486,5 +470,19 @@ console.log(getVowels("Hello World"));
 
 //   return count;
 // }
-// console.log(countVowelsArrow("Hello World")); 
+// console.log(countVowelsArrow("Hello World"));
+
+function getVowels(str) {
+  let vowelsInString = '';
+  const vowels = "aeiouAEIOU";
+  for (let char of str) {
+      if (vowels.includes(char)) {
+          vowelsInString += char;
+      }
+  }
+  return vowelsInString;
+}
+
+console.log(getVowels("Hello World"));  
+
 
