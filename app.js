@@ -532,7 +532,7 @@
 
 let num = [1, 2, 3, 4, 5, 6, 7, 12]    /////map array ko nhi chata ha or new array banaka us ko print karta ha
 let num1= num.reduce((total, num)=>{    /////total inatia valve ha or num us sa add ho ka ana wala value ha
-// return total + num;                  ////print even number
-return total > num ? total : num;      ///print larger number from above numbers
+return total + num;                  ////print even number
+// return total > num ? total : num;      ///print larger number from above numbers
 })
 console.log(num1);
