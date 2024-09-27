@@ -511,15 +511,15 @@
 // )
 
 ////2.map
-// let num = [1, 2, 3, 4]    /////map array ko nhi chata ha or new array banaka us ko print karta ha
-// num.map(function myfun(value){
-// console.log(value **2);
-// })
-
-
-
-let num = [1, 2, 3, 4, 5, 6, 7,]    /////map array ko nhi chata ha or new array banaka us ko print karta ha
-let num1= num.filter((val)=>{
-return val % 2 ==0;
+let num = [1, 2, 3, 4]    /////map array ko nhi chata ha or new array banaka us ko print karta ha
+num.map(function myfun(value){
+console.log(value **2);
 })
-console.log(num1);
+
+
+
+// let num = [1, 2, 3, 4, 5, 6, 7,]    /////map array ko nhi chata ha or new array banaka us ko print karta ha
+// let num1= num.filter((val)=>{
+// return val % 2 ==0;
+// })
+// console.log(num1);
