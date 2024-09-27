@@ -484,24 +484,42 @@
 //   return vowelsInString;
 // }
 
-function getVowels(str) {
-  let vowelsInString = '';
-  for (let char of str) {
+// function getVowels(str) {
+//   let vowelsInString = '';
+//   for (let char of str) {
     
-    if (
-      char === 'a' || char === 'e' || char === 'i' || 
-      char === 'o' || char === 'u' || char === 'A' || 
-      char === 'E' || char === 'I' || char === 'O' || 
-      char === 'U'
-    ) {
-      vowelsInString += char;  // Concatenation happens here
-    }
-  }
-  return vowelsInString;
-}
+//     if (
+//       char === 'a' || char === 'e' || char === 'i' || 
+//       char === 'o' || char === 'u' || char === 'A' || 
+//       char === 'E' || char === 'I' || char === 'O' || 
+//       char === 'U'
+//     ) {
+//       vowelsInString += char;  // Concatenation happens here
+//     }
+//   }
+//   return vowelsInString;
+// }
 
-console.log(getVowels("Hello World"));
+// console.log(getVowels("Hello World"));
+//1.forEach
+// let num = [1, 2, 3, 4]  /////is ma array ko loop ma print karata ha
+// num.forEach(function myfun(value){
+// console.log(value **2);
+// // or
+// // console.log(vale * value);
+// }
+// )
+
+////2.map
+// let num = [1, 2, 3, 4]    /////map array ko nhi chata ha or new array banaka us ko print karta ha
+// num.map(function myfun(value){
+// console.log(value **2);
+// })
 
 
 
-
+let num = [1, 2, 3, 4, 5, 6, 7,]    /////map array ko nhi chata ha or new array banaka us ko print karta ha
+let num1= num.filter((val)=>{
+return val % 2 ==0;
+})
+console.log(num1);
