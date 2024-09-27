@@ -501,7 +501,10 @@
 // }
 
 // console.log(getVowels("Hello World"));
-//1.forEach
+
+
+///array methods
+//1.forEach method
 // let num = [1, 2, 3, 4]  /////is ma array ko loop ma print karata ha
 // num.forEach(function myfun(value){
 // console.log(value **2);
@@ -510,14 +513,14 @@
 // }
 // )
 
-////2.map
+////2.map merhod 
 // let num = [1, 2, 3, 4]    /////map array ko nhi chata ha or new array banaka us ko print karta ha
 // num.map(function myfun(value){
 // console.log(value **2);
 // })
 
 
-
+//.3 filter method
 // let num = [1, 2, 3, 4, 5, 6, 7,]    /////map array ko nhi chata ha or new array banaka us ko print karta ha
 // let num1= num.filter((val)=>{
 // return val % 2 ==0;  ////print even number
@@ -525,10 +528,11 @@
 // console.log(num1);
 
 
+// 4.reduce method
 
-
-let num = [1, 2, 3, 4, 5, 6, 7,]    /////map array ko nhi chata ha or new array banaka us ko print karta ha
-let num1= num.reduce((val)=>{
-return val % 2 ==0;  ////print even number
+let num = [1, 2, 3, 4, 5, 6, 7, 12]    /////map array ko nhi chata ha or new array banaka us ko print karta ha
+let num1= num.reduce((total, num)=>{    /////total inatia valve ha or num us sa add ho ka ana wala value ha
+// return total + num;                  ////print even number
+return total > num ? total : num;      ///print larger number from above numbers
 })
 console.log(num1);
