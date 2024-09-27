@@ -530,9 +530,47 @@
 
 // 4.reduce method
 
-let num = [1, 2, 3, 4, 5, 6, 7, 12]    /////map array ko nhi chata ha or new array banaka us ko print karta ha
-let num1= num.reduce((total, num)=>{    /////total inatia valve ha or num us sa add ho ka ana wala value ha
-return total + num;                  ////print even number
-// return total > num ? total : num;      ///print larger number from above numbers
-})
-console.log(num1);
+// let num = [1, 2, 3, 4, 5, 6, 7, 12]    /////map array ko nhi chata ha or new array banaka us ko print karta ha
+// let num1= num.reduce((total, num)=>{    /////total inatia valve ha or num us sa add ho ka ana wala value ha
+// return total + num;                  ////print even number
+// // return total > num ? total : num;      ///print larger number from above numbers
+// })
+// console.log(num1);
+
+
+////////////////////////for each function in array////////////////
+//  function abc (){
+//   console.log("hellow")
+//  }
+//  function myfun(abc ){ //// uper us fucntion ko call kia ha isa  calback function khata ha ///  kese dusara function ko arhument ki tara pas kia ha isa ham callback function kahat ha
+//   return abc ;
+//  }
+//  let array = ["ali " , "auhd" , "uadhwe" ,"ade"]
+//  array.forEach( function myfun(val , indx , arr){ ///high oder function
+//   console.log (val.toUpperCase() , indx ,arr)
+//  });
+////////////////////////////task ////////////////////////////
+//  let arrnum  =[ 2 , 3 , 4, , 6 ];
+//  arrnum.forEach( (num) =>{
+//   console.log(num * num ) /////num **2
+//  }
+// )
+/////////////////////////map method /////////////////////////////  simillar with the for each method but diffeeren is that it wil give new array
+// let mapnum = [ 2 , 3 , 4, , 6 ];
+// let result = mapnum.map( (num) =>{ // use to create new aarray with new value used based  return value
+// return num * num ;
+// });
+// console.log(result)
+//////////////////filter array //////////////////////////////////
+// let filterNum = [ 2 , 3 , 4,  6  , 7, 8, 9, 0, 1];
+// let result = filterNum.filter( (num) =>{
+//     return num % 2 ===0 0
+// });
+// console.log(result)
+/////////////////////// reduce  arrya method /////////////////
+let reduceNum = [2, 3, 4, 6, 7, 8, 120, 0, 1];
+let result2 = reduceNum.reduce((total, num) => {
+    return  total > num ? total : num
+    // return total + num ;
+});
+console.log(result2);
