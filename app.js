@@ -579,19 +579,6 @@
 // let num  = [1, 2, 2, 3, 4 ,5, 6 ,7, 8,];
 //Q1: Filter out the marks of students who scored 90+
 const marks = [88, 95, 73, 92, 85, 90, 99]; 
-const highScorers = marks.filter(mark => mark > 90);
+const highScorers = marks.filter(mark => mark >= 90);
 console.log(highScorers);  
-////Q2: Create an array of numbers from 1 to n (input from user)
-const n = parseInt(prompt("Enter a number: ")); // User input
-const numberArray = Array.from({ length: n }, (_, i) => i + 1);
-console.log(numberArray);  
 
-////Q4: Use the reduce method to calculate the product of all numbers in the array
-const numbers = [1, 2, 3, 4, 5]; 
-const product = numbers.reduce((accumulator, currentValue) => accumulator * currentValue, 1);
-console.log(product);  
-
-///Q5: Use the reduce method to calculate the sum of all numbers in the array
-
-const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-console.log(sum); 
