@@ -578,20 +578,29 @@
 ///task
 
 //Q1: Filter out the marks of students who scored 90+
-const marks = [88, 95, 73, 92, 85, 90, 99]; 
-const highScorers = marks.filter(mark => mark >= 90 & mark <= 100);
-console.log(highScorers);  
+// const marks = [88, 95, 73, 92, 85, 90, 99]; 
+// const highScorers = marks.filter(mark => mark >= 90 & mark <= 100);
+// console.log(highScorers);  
 ////Q2: Create an array of numbers from 1 to n (input from user)
-const n = parseInt(prompt("Enter a number: ")); 
-const numberArray = Array.from({ length: n }, (_, i) => i + 1);
-console.log(numberArray);  
+// const n = parseInt(prompt("Enter a number: ")); 
+// const numberArray = Array.from({ length: n }, (_, i) => i + 1);
+// console.log(numberArray);  
+//or
+let num =prompt("enter a number")
+let array = []
+
+for(let i = 1; i <= num; i++){
+  array.push(i);
+}
+console.log(array);
+
 
 ////Q4: Use the reduce method to calculate the product of all numbers in the array
-const numbers = [1, 2, 3, 4, 5]; 
-const product = numbers.reduce((accumulator, currentValue) => accumulator * currentValue, 1);
-console.log(product);  
+// const numbers = [1, 2, 3, 4, 5]; 
+// const product = numbers.reduce((accumulator, currentValue) => accumulator * currentValue, 1);
+// console.log(product);  
 
 ///Q5: Use the reduce method to calculate the sum of all numbers in the array
 
-const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-console.log(sum); 
+// const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+// console.log(sum); 
