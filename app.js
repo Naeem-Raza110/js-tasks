@@ -576,13 +576,13 @@
 // console.log(result2);
 
 ///task
-// let num  = [1, 2, 2, 3, 4 ,5, 6 ,7, 8,];
+
 //Q1: Filter out the marks of students who scored 90+
 const marks = [88, 95, 73, 92, 85, 90, 99]; 
 const highScorers = marks.filter(mark => mark >= 90 & mark <= 100);
 console.log(highScorers);  
 ////Q2: Create an array of numbers from 1 to n (input from user)
-const n = parseInt(prompt("Enter a number: ")); // User input
+const n = parseInt(prompt("Enter a number: ")); 
 const numberArray = Array.from({ length: n }, (_, i) => i + 1);
 console.log(numberArray);  
 
