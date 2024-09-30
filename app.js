@@ -546,7 +546,7 @@
 //   return abc ;
 //  }
 //  let array = ["ali " , "auhd" , "uadhwe" ,"ade"]
-//  array.forEach( function myfun(val , indx , arr){ ///high oder function
+//  array.forEach( function myfun(val , indx , arr){ ///high oder function:kasi function ma dusira function ko add karna ko khata ha parrameter ka under add karta ha
 //   console.log (val.toUpperCase() , indx ,arr)
 //  });
 ////////////////////////////task ////////////////////////////
@@ -579,7 +579,7 @@
 // let num  = [1, 2, 2, 3, 4 ,5, 6 ,7, 8,];
 //Q1: Filter out the marks of students who scored 90+
 const marks = [88, 95, 73, 92, 85, 90, 99]; 
-const highScorers = marks.filter(mark => mark > 90);
+const highScorers = marks.filter(mark => mark >= 90 & mark <= 100);
 console.log(highScorers);  
 ////Q2: Create an array of numbers from 1 to n (input from user)
 const n = parseInt(prompt("Enter a number: ")); // User input
