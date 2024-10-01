@@ -628,7 +628,7 @@
 
 const container = document.getElementById('myContainer');
 
-container.addEventListener('click', () => {
+container.addEventListener('mouseHover', () => {
   console.log('You clicked me!');
 });
 
@@ -636,3 +636,11 @@ container.addEventListener('dblclick', () => {
   console.log('You double-clicked me!');
 });
 
+container.addEventListener('mouseover', () => {
+  console.log('You are hovering over me!');
+});
+
+
+container.addEventListener('mouseout', () => {
+  console.log('You stopped hovering over me!');
+});
