@@ -4,14 +4,14 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #9ea0a1;
   }
   
   .container {
     width: 200px;
     height: 200px;
-    background-color: #6895b3;
-    color: white;
+    background-color: #6f9bb8;
+    color: rgb(95, 53, 53);
     display: flex;
     justify-content: center;
     align-items: center;
