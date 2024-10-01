@@ -606,22 +606,33 @@
 // console.log(sum); 
 
 
-let marks =  [ 66 , 77 , 93 , 100 , 61 , 90 , 110] ;
-  let  result = marks.filter ((val) => {
-      return val >= 90 & val <= 100 ;
+// let marks =  [ 66 , 77 , 93 , 100 , 61 , 90 , 110] ;
+//   let  result = marks.filter ((val) => {
+//       return val >= 90 & val <= 100 ;
+// });
+// console.log(result);
+// let num =  prompt("enter the number");
+// let array = [];
+// for (let i = 0; i <= num; i++) {
+//     array.push(i); //'/  0 1 2 3 4 5
+// }
+// console.log(array);
+// // let name  =  [ " ali " , " g " , " h"];
+// //   let result2 = name.push(  "khan");
+// //   console.log(name , result2 );
+// let num2 = [ 1, 3,5 , 8 , 9];
+// let result2 =  num2.reduce(( current , total) => {
+//     return current  + total ; // 0 , 1 , 3 , 5 , 8 , 9  ... current
+// })
+// console.log(result2)
+
+const container = document.getElementById('myContainer');
+
+container.addEventListener('click', () => {
+  console.log('You clicked me!');
 });
-console.log(result);
-let num =  prompt("enter the number");
-let array = [];
-for (let i = 0; i <= num; i++) {
-    array.push(i); //'/  0 1 2 3 4 5
-}
-console.log(array);
-// let name  =  [ " ali " , " g " , " h"];
-//   let result2 = name.push(  "khan");
-//   console.log(name , result2 );
-let num2 = [ 1, 3,5 , 8 , 9];
-let result2 =  num2.reduce(( current , total) => {
-    return current  + total ; // 0 , 1 , 3 , 5 , 8 , 9  ... current
-})
-console.log(result2)
+
+container.addEventListener('dblclick', () => {
+  console.log('You double-clicked me!');
+});
+
