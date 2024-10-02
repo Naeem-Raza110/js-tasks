@@ -617,9 +617,9 @@
 //     array.push(i); //'/  0 1 2 3 4 5
 // }
 // console.log(array);
-// // let name  =  [ " ali " , " g " , " h"];
-// //   let result2 = name.push(  "khan");
-// //   console.log(name , result2 );
+let name  =  [ " ali " , " g " , " h"];
+  let result2 = name.push(  "khan");
+  console.log(name , result2 );
 // let num2 = [ 1, 3,5 , 8 , 9];
 // let result2 =  num2.reduce(( current , total) => {
 //     return current  + total ; // 0 , 1 , 3 , 5 , 8 , 9  ... current
