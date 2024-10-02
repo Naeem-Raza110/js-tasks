@@ -651,3 +651,85 @@
 // x = 2;
 // console.log(x);
 
+// Get elements from the DOM
+const titleInput = document.getElementById('title');
+const descriptionInput = document.getElementById('description');
+const addButton = document.getElementById('addButton');
+const todoList = document.getElementById('todoList');
+
+let todos = [];
+let isEditing = false;
+let currentTodoId = null;
+
+// Function to render the todo list
+function renderTodos() {
+  todoList.innerHTML = ''; // Clear the list
+  todos.forEach(todo => {
+    const li = document.createElement('li');
+    
+    const title = document.createElement('h2');
+    title.innerText = todo.title;
+    
+    const description = document.createElement('p');
+    description.innerText = todo.description;
+
+    const editButton = document.createElement('button');
+    editButton.innerText = 'Edit';
+    editButton.onclick = () => editTodo(todo.id);
+
+    const deleteButton = document.createElement('button');
+    deleteButton.className = 'delete';
+    deleteButton.innerText = 'Delete';
+    deleteButton.onclick = () => deleteTodo(todo.id);
+
+    li.appendChild(title);
+    li.appendChild(description);
+    li.appendChild(editButton);
+    li.appendChild(deleteButton);
+    
+    todoList.appendChild(li);
+  });
+}
+
+// Function to add a new todo
+function addTodo() {
+  const title = titleInput.value;
+  const description = descriptionInput.value;
+
+  if (title && description) {
+    if (isEditing) {
+      // Update the todo
+      todos = todos.map(todo => todo.id === currentTodoId ? { id: currentTodoId, title, description } : todo);
+      isEditing = false;
+      currentTodoId = null;
+    } else {
+      const newTodo = {
+        id: Date.now(),
+        title,
+        description
+      };
+      todos.push(newTodo);
+    }
+    titleInput.value = '';
+    descriptionInput.value = '';
+    renderTodos();
+  }
+}
+
+// Function to delete a todo
+function deleteTodo(id) {
+  todos = todos.filter(todo => todo.id !== id);
+  renderTodos();
+}
+
+// Function to edit a todo
+function editTodo(id) {
+  const todo = todos.find(todo => todo.id === id);
+  titleInput.value = todo.title;
+  descriptionInput.value = todo.description;
+  isEditing = true;
+  currentTodoId = id;
+}
+
+// Event listener for adding a todo
+addButton.addEventListener('click', addTodo);
