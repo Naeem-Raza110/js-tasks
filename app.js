@@ -644,4 +644,10 @@ container.addEventListener('mouseover', () => {
 
 container.addEventListener('mouseout', () => {
   console.log('You are no longer hovering over me!'); 
+  
 });
+
+// const x = 1;
+// x = 2;
+// console.log(x);
+
