@@ -650,86 +650,142 @@
 // const x = 1;
 // x = 2;
 // console.log(x);
-
+///todo app
 // Get elements from the DOM
-const titleInput = document.getElementById('title');
-const descriptionInput = document.getElementById('description');
-const addButton = document.getElementById('addButton');
-const todoList = document.getElementById('todoList');
+// const titleInput = document.getElementById('title');
+// const descriptionInput = document.getElementById('description');
+// const addButton = document.getElementById('addButton');
+// const todoList = document.getElementById('todoList');
 
-let todos = [];
-let isEditing = false;
-let currentTodoId = null;
+// let todos = [];
+// let isEditing = false;
+// let currentTodoId = null;
 
-// Function to render the todo list
-function renderTodos() {
-  todoList.innerHTML = ''; // Clear the list
-  todos.forEach(todo => {
-    const li = document.createElement('li');
+// // Function to render the todo list
+// function renderTodos() {
+//   todoList.innerHTML = ''; // Clear the list
+//   todos.forEach(todo => {
+//     const li = document.createElement('li');
     
-    const title = document.createElement('h2');
-    title.innerText = todo.title;
+//     const title = document.createElement('h2');
+//     title.innerText = todo.title;
     
-    const description = document.createElement('p');
-    description.innerText = todo.description;
+//     const description = document.createElement('p');
+//     description.innerText = todo.description;
 
-    const editButton = document.createElement('button');
-    editButton.innerText = 'Edit';
-    editButton.onclick = () => editTodo(todo.id);
+//     const editButton = document.createElement('button');
+//     editButton.innerText = 'Edit';
+//     editButton.onclick = () => editTodo(todo.id);
 
-    const deleteButton = document.createElement('button');
-    deleteButton.className = 'delete';
-    deleteButton.innerText = 'Delete';
-    deleteButton.onclick = () => deleteTodo(todo.id);
+//     const deleteButton = document.createElement('button');
+//     deleteButton.className = 'delete';
+//     deleteButton.innerText = 'Delete';
+//     deleteButton.onclick = () => deleteTodo(todo.id);
 
-    li.appendChild(title);
-    li.appendChild(description);
-    li.appendChild(editButton);
-    li.appendChild(deleteButton);
+//     li.appendChild(title);
+//     li.appendChild(description);
+//     li.appendChild(editButton);
+//     li.appendChild(deleteButton);
     
-    todoList.appendChild(li);
-  });
-}
+//     todoList.appendChild(li);
+//   });
+// }
 
-// Function to add a new todo
-function addTodo() {
-  const title = titleInput.value;
-  const description = descriptionInput.value;
+// // Function to add a new todo
+// function addTodo() {
+//   const title = titleInput.value;
+//   const description = descriptionInput.value;
 
-  if (title && description) {
-    if (isEditing) {
-      // Update the todo
-      todos = todos.map(todo => todo.id === currentTodoId ? { id: currentTodoId, title, description } : todo);
-      isEditing = false;
-      currentTodoId = null;
-    } else {
-      const newTodo = {
-        id: Date.now(),
-        title,
-        description
-      };
-      todos.push(newTodo);
-    }
-    titleInput.value = '';
-    descriptionInput.value = '';
-    renderTodos();
+//   if (title && description) {
+//     if (isEditing) {
+//       // Update the todo
+//       todos = todos.map(todo => todo.id === currentTodoId ? { id: currentTodoId, title, description } : todo);
+//       isEditing = false;
+//       currentTodoId = null;
+//     } else {
+//       const newTodo = {
+//         id: Date.now(),
+//         title,
+//         description
+//       };
+//       todos.push(newTodo);
+//     }
+//     titleInput.value = '';
+//     descriptionInput.value = '';
+//     renderTodos();
+//   }
+// }
+
+// // Function to delete a todo
+// function deleteTodo(id) {
+//   todos = todos.filter(todo => todo.id !== id);
+//   renderTodos();
+// }
+
+// // Function to edit a todo
+// function editTodo(id) {
+//   const todo = todos.find(todo => todo.id === id);
+//   titleInput.value = todo.title;
+//   descriptionInput.value = todo.description;
+//   isEditing = true;
+//   currentTodoId = id;
+// }
+
+// // Event listener for adding a todo
+// addButton.addEventListener('click', addTodo);
+
+let title = document.getElementById("title");
+let addbtn = document.getElementById("addbtn");
+let todolist = document.getElementById("todolist");
+let description = document.getElementById("description");
+let editTodo = null;
+addbtn.addEventListener("click", () => {
+  if (title.value == "") {
+    alert("Please enter a valid title");
+    return false;
   }
-}
-
-// Function to delete a todo
-function deleteTodo(id) {
-  todos = todos.filter(todo => todo.id !== id);
-  renderTodos();
-}
-
-// Function to edit a todo
-function editTodo(id) {
-  const todo = todos.find(todo => todo.id === id);
-  titleInput.value = todo.title;
-  descriptionInput.value = todo.description;
-  isEditing = true;
-  currentTodoId = id;
-}
-
-// Event listener for adding a todo
-addButton.addEventListener('click', addTodo);
+  if (description.value == "") {
+    alert("Please enter a valid description");
+    return false;
+  }
+  if (editTodo !== null) {
+    editTodo.querySelector(".title").textContent = title.value;
+    editTodo.querySelector(".description").textContent = description.value;
+    editTodo = null;
+    addbtn.innerText = "Add New Post";
+  } else {
+    const li = document.createElement("li");
+    const titleSpan = document.createElement("span");
+    titleSpan.classList.add("title");
+    titleSpan.innerText = title.value;
+    li.appendChild(titleSpan);
+    const descSpan = document.createElement("span");
+    descSpan.classList.add("description");
+    descSpan.innerText = description.value;
+    li.appendChild(descSpan);
+    const editBtn = document.createElement("button");
+    editBtn.innerText = "Edit";
+    editBtn.classList.add("editBtn");
+    li.appendChild(editBtn);
+    const deleteBtn = document.createElement("button");
+    deleteBtn.innerText = "Delete";
+    deleteBtn.classList.add("deleteBtn");
+    li.appendChild(deleteBtn);
+    todolist.appendChild(li);
+  }
+  title.value = "";
+  description.value = "";
+});
+const updateTodo = (e) => {
+  if (e.target.innerText === "Delete") {
+    e.target.parentElement.remove();
+  }
+  if (e.target.innerText === "Edit") {
+    editTodo = e.target.parentElement;
+    title.value = editTodo.querySelector(".title").textContent;
+    description.value = editTodo.querySelector(".description").textContent;
+    addbtn.innerText = "Update";
+    title.focus();
+  }
+};
+todolist.addEventListener("click", updateTodo);
