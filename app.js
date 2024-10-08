@@ -763,9 +763,60 @@
 
 ////end todo app
 
-function hello() {
+// function hello() {
+// }
+// hello( console.log("hello1"));
+// function hello2() {
+// }
+// hello( console.log("hello2"));
+
+// function hello3() {
+// }
+// hello( console.log("hello3"));
+
+
+
+
+// function showPrompt(message) {
+//   return prompt(message);
+// }
+// alert(showPrompt("Enter something:"));
+
+
+// async function showPrompt(message) {
+//   return new Promise((resolve) => {
+//     const userInput = prompt(message); // Synchronous prompt
+//     resolve(userInput);  // Resolve the input
+//   });
+// }
+
+// async function main() {
+//   const result = await showPrompt("Enter something:"); // Wait for user input
+//   alert(result);  // Display the result
+// }
+
+// main();  // Call the asynchronous function
+
+
+async function showPrompt(message) {
+  return new Promise((resolve) => {
+    const userInput = prompt(message);  // Synchronous prompt
+    resolve(userInput);  // Resolve the input
+  });
 }
-hello( console.log("hello1"));
-function hello2() {
+
+async function delayAlert(message, time) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      alert(message);  // Show alert after the delay
+      resolve();
+    }, time);  // Delay time in milliseconds
+  });
 }
-hello( console.log("hello2"));
+
+async function main() {
+  const result = await showPrompt("Enter something:");
+  await delayAlert(result, 2000);  // Delay of 3 seconds before showing the alert
+}
+
+main();  // Call the asynchronous function
