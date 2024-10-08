@@ -21,23 +21,21 @@
 //    }else{
 //      console.log("odd");
 //    }
-  //  let mode = "purple";
-  //  let color;
-  //  if (mode == "light"){
-  //    color = "yellow";
-  //    console.log("yellow ")
-  //  }else if (mode == "red"){
-  //      color = "red"
-  //      console.log( color," red")
-  //  }else if (mode == "green"){
-  //    color = "red"
-  //    console.log( color," green")
-  //  }else {
-  //    color = "white"
-  //    console.log("white ")
-  //  };
-
-
+//  let mode = "purple";
+//  let color;
+//  if (mode == "light"){
+//    color = "yellow";
+//    console.log("yellow ")
+//  }else if (mode == "red"){
+//      color = "red"
+//      console.log( color," red")
+//  }else if (mode == "green"){
+//    color = "red"
+//    console.log( color," green")
+//  }else {
+//    color = "white"
+//    console.log("white ")
+//  };
 
 // let num = prompt("Enter a number:");
 
@@ -60,8 +58,6 @@
 // tarnary oprators ---.compact
 // let num = prompt("Enter a number")
 // let result = num % 5 == 0 ?  console.log(num, " is multiple of 5") :  console.log(num, " is not multiple of 5");
-
-
 
 //switch statment
 // let day = 1;
@@ -90,7 +86,6 @@
 //   default:
 //     console.log("invalid day");
 // }
-
 
 // <!DOCTYPE html>
 // <html lang="en">
@@ -195,10 +190,6 @@
 //     ? console.log("multiple of the five ")
 //     : console.log("oNOT a multiple of the five ");
 
-
-
-
-
 /////////////loops //////
 // let num = 0 ;
 // for (let i = 1; i <= 5; i++) {
@@ -268,18 +259,16 @@
 
 // Q-1-print all even number form 0 to 100
 
-
 // let num = 0;
 // for (let i = 1; i <= 100;  i++) {
 //   if(i % 2 == 0) {
 //      console.log("even number" , i);
-//   }else (i % 2 !== 0)  
+//   }else (i % 2 !== 0)
 //   {
 //     console.log( "old number" , i);
 //   }
 
 // }
-
 
 // let num = Number(prompt("Enter a first  number:"));
 // let num2 = Number(prompt("Enter a second number"));
@@ -365,17 +354,12 @@
 //  let text3 = text2.concat(text1)
 //  let text4 = text1.length;
 //  alert(text3.concat(text4)); //or alert (text3.tex4)
- 
-
- 
 
 // 6.trim string (trim string ma qutision or word ka dirman space ko khatam karta ha)
 // let str = " Hello, World!   ";
 // let trimmedStr = str.trim();
 
-// console.log(trimmedStr); 
-
-
+// console.log(trimmedStr);
 
 ////Array methods
 //1. tostring method
@@ -388,15 +372,12 @@
 // let = fruits.push("Kiwi");
 // alert(fruits)
 
- ///3.Array copyWithin()
+///3.Array copyWithin()
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // fruits.copyWithin(2, 0);
 // console.log(fruits);
 
-
-
-
-////function 
+////function
 ///1.add to numbers
 // function myfunction(a, b) {
 //   return a + b ;
@@ -413,35 +394,32 @@
 // function multiplyNumbers(a, b) {
 // return a * b  ;
 // }
-// console.log(multiplyNumbers(4, 5)); 
+// console.log(multiplyNumbers(4, 5));
 //3. convertMinutesToSeconds
 // function convertMinutesToSeconds(minutes) {
 //   const seconds = minutes * 60;
-//   return seconds; 
+//   return seconds;
 // }
 
 // console.log(convertMinutesToSeconds(1));
-// console.log(convertMinutesToSeconds(2)); 
+// console.log(convertMinutesToSeconds(2));
 
-//4.finds the largest 
+//4.finds the largest
 // function findLargestNumber(a, b, c, e) {
 //   const largest = Math.max(a, b, c, e);
-//   return largest; 
+//   return largest;
 // }
 // console.log(findLargestNumber(3, 9, 6, 4));
-// console.log(findLargestNumber(15, 8, 12, 5)); 
-
+// console.log(findLargestNumber(15, 8, 12, 5));
 
 ///arrrow function
 
-
 // function arriow = (a, b, c, e) => {
 //   let largest = Math.max(a, b, c, e);
-//   return largest; 
+//   return largest;
 // }
 // console.log(findLargestNumber(3, 9, 6, 4)) ;
-// console.log(findLargestNumber(15, 8, 12, 5)); 
-
+// console.log(findLargestNumber(15, 8, 12, 5));
 
 // function countVowels(str) {
 //   const vowels = 'aeiouAEIOU';
@@ -455,7 +433,7 @@
 
 //   return count;
 // }
-// console.log(countVowels("Hello World")); 
+// console.log(countVowels("Hello World"));
 
 ///arrow function :
 // const countVowelsArrow = (str) => {
@@ -478,7 +456,7 @@
 //   for (let char of str) {
 //       if (vowels.includes(char)) {
 //           vowelsInString += char;
-          
+
 //       }
 //   }
 //   return vowelsInString;
@@ -487,11 +465,11 @@
 // function getVowels(str) {
 //   let vowelsInString = '';
 //   for (let char of str) {
-    
+
 //     if (
-//       char === 'a' || char === 'e' || char === 'i' || 
-//       char === 'o' || char === 'u' || char === 'A' || 
-//       char === 'E' || char === 'I' || char === 'O' || 
+//       char === 'a' || char === 'e' || char === 'i' ||
+//       char === 'o' || char === 'u' || char === 'A' ||
+//       char === 'E' || char === 'I' || char === 'O' ||
 //       char === 'U'
 //     ) {
 //       vowelsInString += char;  // Concatenation happens here
@@ -501,7 +479,6 @@
 // }
 
 // console.log(getVowels("Hello World"));
-
 
 ///array methods
 //1.forEach method
@@ -513,12 +490,11 @@
 // }
 // )
 
-////2.map merhod 
+////2.map merhod
 // let num = [1, 2, 3, 4]    /////map array ko nhi chata ha or new array banaka us ko print karta ha
 // num.map(function myfun(value){
 // console.log(value **2);
 // })
-
 
 //.3 filter method
 // let num = [1, 2, 3, 4, 5, 6, 7,]    /////map array ko nhi chata ha or new array banaka us ko print karta ha
@@ -526,7 +502,6 @@
 // return val % 2 ==0;  ////print even number
 // })
 // console.log(num1);
-
 
 // 4.reduce method
 
@@ -536,7 +511,6 @@
 // // return total > num ? total : num;      ///print larger number from above numbers
 // })
 // console.log(num1);
-
 
 ////////////////////////for each function in array////////////////
 //  function abc (){
@@ -578,13 +552,13 @@
 ///task
 
 //Q1: Filter out the marks of students who scored 90+
-// const marks = [88, 95, 73, 92, 85, 90, 99]; 
+// const marks = [88, 95, 73, 92, 85, 90, 99];
 // const highScorers = marks.filter(mark => mark >= 90 & mark <= 100);
-// console.log(highScorers);  
+// console.log(highScorers);
 ////Q2: Create an array of numbers from 1 to n (input from user)
-// const n = parseInt(prompt("Enter a number: ")); 
+// const n = parseInt(prompt("Enter a number: "));
 // const numberArray = Array.from({ length: n }, (_, i) => i + 1);
-// console.log(numberArray);  
+// console.log(numberArray);
 //or
 // let num =prompt("enter a number")
 // let array = []
@@ -594,17 +568,15 @@
 // }
 // console.log(array);
 
-
 ////Q4: Use the reduce method to calculate the product of all numbers in the array
-// const numbers = [1, 2, 3, 4, 5]; 
+// const numbers = [1, 2, 3, 4, 5];
 // const product = numbers.reduce((accumulator, currentValue) => accumulator * currentValue, 1);
-// console.log(product);  
+// console.log(product);
 
 ///Q5: Use the reduce method to calculate the sum of all numbers in the array
 
 // const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-// console.log(sum); 
-
+// console.log(sum);
 
 // let marks =  [ 66 , 77 , 93 , 100 , 61 , 90 , 110] ;
 //   let  result = marks.filter ((val) => {
@@ -641,10 +613,9 @@
 //   console.log('You are hovering over me!');
 // });
 
-
 // container.addEventListener('mouseout', () => {
-//   console.log('You are no longer hovering over me!'); 
-  
+//   console.log('You are no longer hovering over me!');
+
 // });
 
 // const x = 1;
@@ -666,10 +637,10 @@
 //   todoList.innerHTML = ''; // Clear the list
 //   todos.forEach(todo => {
 //     const li = document.createElement('li');
-    
+
 //     const title = document.createElement('h2');
 //     title.innerText = todo.title;
-    
+
 //     const description = document.createElement('p');
 //     description.innerText = todo.description;
 
@@ -686,7 +657,7 @@
 //     li.appendChild(description);
 //     li.appendChild(editButton);
 //     li.appendChild(deleteButton);
-    
+
 //     todoList.appendChild(li);
 //   });
 // }
@@ -733,59 +704,119 @@
 
 // // Event listener for adding a todo
 // addButton.addEventListener('click', addTodo);
+// 2nd todo app
+// let title = document.getElementById("title");
+// let addbtn = document.getElementById("addbtn");
+// let todolist = document.getElementById("todolist");
+// let description = document.getElementById("description");
+// let editTodo = null;
+// addbtn.addEventListener("click", () => {
+//   if (title.value == "") {
+//     alert("Please enter a valid title");
+//     return false;
+//   }
+//   if (description.value == "") {
+//     alert("Please enter a valid description");
+//     return false;
+//   }
+//   if (editTodo !== null) {
+//     editTodo.querySelector(".title").textContent = title.value;
+//     editTodo.querySelector(".description").textContent = description.value;
+//     editTodo = null;
+//     addbtn.innerText = "Add New Post";
+//   } else {
+//     const li = document.createElement("li");
+//     const titleSpan = document.createElement("span");
+//     titleSpan.classList.add("title");
+//     titleSpan.innerText = title.value;
+//     li.appendChild(titleSpan);
+//     const descSpan = document.createElement("span");
+//     descSpan.classList.add("description");
+//     descSpan.innerText = description.value;
+//     li.appendChild(descSpan);
+//     const editBtn = document.createElement("button");
+//     editBtn.innerText = "Edit";
+//     editBtn.classList.add("editBtn");
+//     li.appendChild(editBtn);
+//     const deleteBtn = document.createElement("button");
+//     deleteBtn.innerText = "Delete";
+//     deleteBtn.classList.add("deleteBtn");
+//     li.appendChild(deleteBtn);
+//     todolist.appendChild(li);
+//   }
+//   title.value = "";
+//   description.value = "";
+// });
+// const updateTodo = (e) => {
+//   if (e.target.innerText === "Delete") {
+//     e.target.parentElement.remove();
+//   }
+//   if (e.target.innerText === "Edit") {
+//     editTodo = e.target.parentElement;
+//     title.value = editTodo.querySelector(".title").textContent;
+//     description.value = editTodo.querySelector(".description").textContent;
+//     addbtn.innerText = "Update";
+//     title.focus();
+//   }
+// };
+// todolist.addEventListener("click", updateTodo);
 
-let title = document.getElementById("title");
-let addbtn = document.getElementById("addbtn");
-let todolist = document.getElementById("todolist");
-let description = document.getElementById("description");
-let editTodo = null;
-addbtn.addEventListener("click", () => {
-  if (title.value == "") {
-    alert("Please enter a valid title");
-    return false;
-  }
-  if (description.value == "") {
-    alert("Please enter a valid description");
-    return false;
-  }
-  if (editTodo !== null) {
-    editTodo.querySelector(".title").textContent = title.value;
-    editTodo.querySelector(".description").textContent = description.value;
-    editTodo = null;
-    addbtn.innerText = "Add New Post";
-  } else {
-    const li = document.createElement("li");
-    const titleSpan = document.createElement("span");
-    titleSpan.classList.add("title");
-    titleSpan.innerText = title.value;
-    li.appendChild(titleSpan);
-    const descSpan = document.createElement("span");
-    descSpan.classList.add("description");
-    descSpan.innerText = description.value;
-    li.appendChild(descSpan);
-    const editBtn = document.createElement("button");
-    editBtn.innerText = "Edit";
-    editBtn.classList.add("editBtn");
-    li.appendChild(editBtn);
-    const deleteBtn = document.createElement("button");
-    deleteBtn.innerText = "Delete";
-    deleteBtn.classList.add("deleteBtn");
-    li.appendChild(deleteBtn);
-    todolist.appendChild(li);
-  }
-  title.value = "";
-  description.value = "";
-});
-const updateTodo = (e) => {
-  if (e.target.innerText === "Delete") {
-    e.target.parentElement.remove();
-  }
-  if (e.target.innerText === "Edit") {
-    editTodo = e.target.parentElement;
-    title.value = editTodo.querySelector(".title").textContent;
-    description.value = editTodo.querySelector(".description").textContent;
-    addbtn.innerText = "Update";
-    title.focus();
-  }
-};
-todolist.addEventListener("click", updateTodo);
+////end todo app
+
+// function hello() {
+// }
+// hello( console.log("hello1"));
+// function hello2() {
+// }
+// hello( console.log("hello2"));
+
+// function hello3() {
+// }
+// hello( console.log("hello3"));
+
+
+
+
+// function showPrompt(message) {
+//   return prompt(message);
+// }
+// alert(showPrompt("Enter something:"));
+
+
+// async function showPrompt(message) {
+//   return new Promise((resolve) => {
+//     const userInput = prompt(message); // Synchronous prompt
+//     resolve(userInput);  // Resolve the input
+//   });
+// }
+
+// async function main() {
+//   const result = await showPrompt("Enter something:"); // Wait for user input
+//   alert(result);  // Display the result
+// }
+
+// main();  // Call the asynchronous function
+
+
+async function showPrompt(message) {
+  return new Promise((resolve) => {
+    const userInput = prompt(message);  // Synchronous prompt
+    resolve(userInput);  // Resolve the input
+  });
+}
+
+async function delayAlert(message, time) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      alert(message);  // Show alert after the delay
+      resolve();
+    }, time);  // Delay time in milliseconds
+  });
+}
+
+async function main() {
+  const result = await showPrompt("Enter something:");
+  await delayAlert(result, 2000);  // Delay of 3 seconds before showing the alert
+}
+
+main();  // Call the asynchronous function
