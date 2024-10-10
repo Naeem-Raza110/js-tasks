@@ -820,3 +820,43 @@ async function main() {
 }
 
 main();  // Call the asynchronous function
+
+
+function getData(dataID, getNextData){
+  setTimeout(() => {
+    console.log("data" , dataID);
+    getNextData(dataID)
+    
+  }, 2000);
+}
+
+
+getData(1, ()=>{
+  getData(2, ()=>{
+    getData(3, ()=>{})
+  })
+})
+
+
+
+
+
+
+function hello() {
+  console.log("hello");
+}
+setTimeout(()=>{
+  console.log("hello")
+}, 2000);
+
+
+function getData(dataID, getNextData){
+  setTimeout(()=>{
+    console.log("data",dataID);
+    getNextData();
+  },2000);
+}
+
+getData(1, ()=> {
+  getData(2)
+})
