@@ -798,65 +798,68 @@
 // main();  // Call the asynchronous function
 
 
-async function showPrompt(message) {
-  return new Promise((resolve) => {
-    const userInput = prompt(message);  // Synchronous prompt
-    resolve(userInput);  // Resolve the input
-  });
-}
+// async function showPrompt(message) {
+//   return new Promise((resolve) => {
+//     const userInput = prompt(message);  // Synchronous prompt
+//     resolve(userInput);  // Resolve the input
+//   });
+// }
 
-async function delayAlert(message, time) {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      alert(message);  // Show alert after the delay
-      resolve();
-    }, time);  // Delay time in milliseconds
-  });
-}
+// async function delayAlert(message, time) {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       alert(message);  // Show alert after the delay
+//       resolve();
+//     }, time);  // Delay time in milliseconds
+//   });
+// }
 
-async function main() {
-  const result = await showPrompt("Enter something:");
-  await delayAlert(result, 2000);  // Delay of 3 seconds before showing the alert
-}
+// async function main() {
+//   const result = await showPrompt("Enter something:");
+//   await delayAlert(result, 2000);  // Delay of 3 seconds before showing the alert
+// }
 
-main();  // Call the asynchronous function
+// main();  // Call the asynchronous function
 
 
-function getData(dataID, getNextData){
-  setTimeout(() => {
-    console.log("data" , dataID);
-    getNextData(dataID)
+// function getData(dataID, getNextData){
+//   setTimeout(() => {
+//     console.log("data" , dataID);
+//     getNextData(dataID)
     
-  }, 2000);
-}
+//   }, 2000);
+// }
 
 
-getData(1, ()=>{
-  getData(2, ()=>{
-    getData(3, ()=>{})
-  })
-})
-
-
-
+// getData(1, ()=>{
+//   getData(2, ()=>{
+//     getData(3, ()=>{})
+//   })
+// })
 
 
 
-function hello() {
-  console.log("hello");
-}
-setTimeout(()=>{
-  console.log("hello")
-}, 2000);
 
 
-function getData(dataID, getNextData){
-  setTimeout(()=>{
-    console.log("data",dataID);
-    getNextData();
-  },2000);
-}
 
-getData(1, ()=> {
-  getData(2)
-})
+// function hello() {
+//   console.log("hello");
+// }
+// setTimeout(()=>{
+//   console.log("hello")
+// }, 2000);
+
+
+// function getData(dataID, getNextData){
+//   setTimeout(()=>{
+//     console.log("data",dataID);
+//     getNextData();
+//   },2000);
+// }
+
+// getData(1, ()=> {
+//   getData(2)
+// })
+
+
+
