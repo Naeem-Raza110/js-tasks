@@ -774,14 +774,10 @@
 // }
 // hello( console.log("hello3"));
 
-
-
-
 // function showPrompt(message) {
 //   return prompt(message);
 // }
 // alert(showPrompt("Enter something:"));
-
 
 // async function showPrompt(message) {
 //   return new Promise((resolve) => {
@@ -796,7 +792,6 @@
 // }
 
 // main();  // Call the asynchronous function
-
 
 // async function showPrompt(message) {
 //   return new Promise((resolve) => {
@@ -821,15 +816,13 @@
 
 // main();  // Call the asynchronous function
 
-
 // function getData(dataID, getNextData){
 //   setTimeout(() => {
 //     console.log("data" , dataID);
 //     getNextData(dataID)
-    
+
 //   }, 2000);
 // }
-
 
 // getData(1, ()=>{
 //   getData(2, ()=>{
@@ -837,18 +830,12 @@
 //   })
 // })
 
-
-
-
-
-
 // function hello() {
 //   console.log("hello");
 // }
 // setTimeout(()=>{
 //   console.log("hello")
 // }, 2000);
-
 
 // function getData(dataID, getNextData){
 //   setTimeout(()=>{
@@ -861,6 +848,73 @@
 //   getData(2)
 // })
 
+// const examplePromise = new Promise((resolve, reject) => {
+//     let success = false;
+//     console.log("Promise Status: Pending...");
+//     if (success) {
+//       setTimeout(() => resolve("Operation was successful!"), 4000);
+//     } else {
+//       setTimeout(() => reject("Operation failed!"), 3000);
+//     }
+//   });
+
+//   examplePromise.then((resolve) => {
+//     console.log(resolve);
+//   })
+//   .catch((error) => {
+//     console.log("Promise Status: Rejected");
+//     console.log(error);
+
+//   })
+
+//   examplePromise.then((resolve) => {
+//       console.log(resolve);
+//     })
+//     .catch((error) => {
+//       console.log("Promise Status: Rejected");
+//       console.log(error);
+//     });
 
 
- 
+
+
+// let examplePromise =  Promise((resolve, reject) => {
+//     examplePromise = "true ";
+//     console.log("Promise Status: Pending...");
+//     if (true) {
+//         console.log("Promise Status: Resolved"); 
+//     }
+//     else (reject)
+//     console.log("Promise Status: Rejected");
+// })
+
+// examplePromise.then((resolve) => {
+//     console.log(resolve);
+//   })
+//   .catch((error) => {
+//     console.log("Promise Status: Rejected");
+//     console.log(error);
+//   });
+
+
+
+
+
+  
+
+async function fetchApiData() {
+  try {
+    console.log("Requesting data from API...");
+    const data = await new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve("API data received successfully!");
+      }, 3000);
+    });
+    console.log("Response:", data);
+  } catch (error) {
+    console.error("API Request Failed:", error);
+  }
+}
+fetchApiData();
+
+
