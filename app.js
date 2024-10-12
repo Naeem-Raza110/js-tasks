@@ -824,11 +824,11 @@
 //   }, 2000);
 // }
 
-// getData(1, ()=>{
-//   getData(2, ()=>{
-//     getData(3, ()=>{})
-//   })
-// })
+getData(1, ()=>{
+  getData(2, ()=>{
+    getData(3, ()=>{})
+  })
+})
 
 // function hello() {
 //   console.log("hello");
