@@ -816,13 +816,13 @@
 
 // main();  // Call the asynchronous function
 
-// function getData(dataID, getNextData){
-//   setTimeout(() => {
-//     console.log("data" , dataID);
-//     getNextData(dataID)
+function getData(dataID, getNextData){
+  setTimeout(() => {
+    console.log("data" , dataID);
+    getNextData(dataID)
 
-//   }, 2000);
-// }
+  }, 2000);
+}
 
 // getData(1, ()=>{
 //   getData(2, ()=>{
