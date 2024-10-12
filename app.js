@@ -902,19 +902,19 @@ examplePromise.then((resolve) => {
 
   
 
-// async function fetchApiData() {
-//   try {
-//     console.log("Requesting data from API...");
-//     const data = await new Promise((resolve, reject) => {
-//       setTimeout(() => {
-//         resolve("API data received successfully!");
-//       }, 3000);
-//     });
-//     console.log("Response:", data);
-//   } catch (error) {
-//     console.error("API Request Failed:", error);
-//   }
-// }
-// fetchApiData();
+async function fetchApiData() {
+  try {
+    console.log("Requesting data from API...");
+    const data = await new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve("API data received successfully!");
+      }, 3000);
+    });
+    console.log("Response:", data);
+  } catch (error) {
+    console.error("API Request Failed:", error);
+  }
+}
+fetchApiData();
 
 
