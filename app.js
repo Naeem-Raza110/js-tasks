@@ -830,19 +830,19 @@
 //   })
 // })
 
-function hello() {
-  console.log("hello");
-}
-setTimeout(()=>{
-  console.log("hello")
-}, 2000);
+// function hello() {
+//   console.log("hello");
+// }
+// setTimeout(()=>{
+//   console.log("hello")
+// }, 2000);
 
-function getData(dataID, getNextData){
-  setTimeout(()=>{
-    console.log("data",dataID);
-    getNextData();
-  },2000);
-}
+// function getData(dataID, getNextData){
+//   setTimeout(()=>{
+//     console.log("data",dataID);
+//     getNextData();
+//   },2000);
+// }
 
 // getData(1, ()=> {
 //   getData(2)
@@ -878,23 +878,23 @@ function getData(dataID, getNextData){
 
 
 
-let examplePromise =  Promise((resolve, reject) => {
-    examplePromise = "true ";
-    console.log("Promise Status: Pending...");
-    if (true) {
-        console.log("Promise Status: Resolved"); 
-    }
-    else (reject)
-    console.log("Promise Status: Rejected");
-})
+// let examplePromise =  Promise((resolve, reject) => {
+//     examplePromise = "true ";
+//     console.log("Promise Status: Pending...");
+//     if (true) {
+//         console.log("Promise Status: Resolved"); 
+//     }
+//     else (reject)
+//     console.log("Promise Status: Rejected");
+// })
 
-examplePromise.then((resolve) => {
-    console.log(resolve);
-  })
-  .catch((error) => {
-    console.log("Promise Status: Rejected");
-    console.log(error);
-  });
+// examplePromise.then((resolve) => {
+//     console.log(resolve);
+//   })
+//   .catch((error) => {
+//     console.log("Promise Status: Rejected");
+//     console.log(error);
+//   });
 
 
 
@@ -902,19 +902,19 @@ examplePromise.then((resolve) => {
 
   
 
-async function fetchApiData() {
-  try {
-    console.log("Requesting data from API...");
-    const data = await new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve("API data received successfully!");
-      }, 3000);
-    });
-    console.log("Response:", data);
-  } catch (error) {
-    console.error("API Request Failed:", error);
-  }
-}
-fetchApiData();
+// async function fetchApiData() {
+//   try {
+//     console.log("Requesting data from API...");
+//     const data = await new Promise((resolve, reject) => {
+//       setTimeout(() => {
+//         resolve("API data received successfully!");
+//       }, 3000);
+//     });
+//     console.log("Response:", data);
+//   } catch (error) {
+//     console.error("API Request Failed:", error);
+//   }
+// }
+// fetchApiData();
 
 
