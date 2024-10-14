@@ -924,16 +924,29 @@
 ///10 examples of JavaScript promises to help you understand how they work:
 
 //1. Basic Promise Example
-let myPromise = new Promise((resolve, reject) => {
-    let success = true;
-    if (success) {
-      resolve("Task completed successfully");
-    } else {
-      reject("Task failed");
-    }
+// let myPromise = new Promise((resolve, reject) => {
+//     let success = true;
+//     if (success) {
+//       resolve("Task completed successfully");
+//     } else {
+//       reject("Task failed");
+//     }
+//   });
+  
+//   myPromise
+//     .then(result => console.log(result))
+//     .catch(error => console.log(error));
+  
+
+
+
+///2. Promise with setTimeout
+
+let delayedPromise = new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Executed after 2 seconds");
+    }, 2000);
   });
   
-  myPromise
-    .then(result => console.log(result))
-    .catch(error => console.log(error));
+  delayedPromise.then(result => console.log(result));
   
