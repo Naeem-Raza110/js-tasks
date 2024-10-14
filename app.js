@@ -942,11 +942,23 @@
 
 ///2. Promise with setTimeout
 
-let delayedPromise = new Promise((resolve) => {
-    setTimeout(() => {
-      resolve("Executed after 2 seconds");
-    }, 2000);
+// let delayedPromise = new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve("Executed after 2 seconds");
+//     }, 2000);
+//   });
+  
+//   delayedPromise.then(result => console.log(result));
+  
+
+
+///3. Chaining Promises
+let chainPromise = new Promise((resolve) => {
+    resolve(10);
   });
   
-  delayedPromise.then(result => console.log(result));
+  chainPromise
+    .then(result => result * 2)
+    .then(result => result + 5)
+    .then(result => console.log(result)); // Output: 25
   
