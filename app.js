@@ -953,12 +953,19 @@
 
 
 ///3. Chaining Promises
-let chainPromise = new Promise((resolve) => {
-    resolve(10);
-  });
+// let chainPromise = new Promise((resolve) => {
+//     resolve(10);
+//   });
   
-  chainPromise
-    .then(result => result * 2)
-    .then(result => result + 5)
-    .then(result => console.log(result)); // Output: 25
+//   chainPromise
+//     .then(result => result * 2)
+//     .then(result => result + 5)
+//     .then(result => console.log(result)); // Output: 25
   
+
+
+/////4. Promise with fetch API
+fetch('https://jsonplaceholder.typicode.com/posts/1')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.log("Fetch error: ", error));
