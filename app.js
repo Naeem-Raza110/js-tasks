@@ -965,7 +965,24 @@
 
 
 /////4. Promise with fetch API
-fetch('https://jsonplaceholder.typicode.com/posts/1')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.log("Fetch error: ", error));
+// fetch('https://jsonplaceholder.typicode.com/posts/1')
+//   .then(response => response.json())
+//   .then(data => console.log(data))
+//   .catch(error => console.log("Fetch error: ", error));
+
+
+
+///5. Promise with async/await Syntax
+
+async function fetchData() {
+    try {
+      let response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+      let data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.log("Error:", error);
+    }
+  }
+  
+  fetchData();
+  
