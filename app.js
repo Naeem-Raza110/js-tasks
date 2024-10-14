@@ -1004,4 +1004,14 @@ let p2 = new Promise((resolve) => setTimeout(() => resolve("Second!"), 1000));
 Promise.race([p1, p2])
   .then(result => console.log(result)); // Output: "First!"
 
+
+  //8. Rejecting a Promise
+
+  let rejectPromise = new Promise((resolve, reject) => {
+    reject("Error occurred");
+  });
+  
+  rejectPromise
+    .then(result => console.log(result))
+    .catch(error => console.log(error)); // Output: "Error occurred"
   
