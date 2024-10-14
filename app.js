@@ -1019,17 +1019,35 @@
 
 //9. Promise with AJAX (XHR Request)
 
-function fetchData(url) {
-    return new Promise((resolve, reject) => {
-      let xhr = new XMLHttpRequest();
-      xhr.open("GET", url);
-      xhr.onload = () => resolve(xhr.responseText);
-      xhr.onerror = () => reject("Request failed");
-      xhr.send();
-    });
-  }
+// function fetchData(url) {
+//     return new Promise((resolve, reject) => {
+//       let xhr = new XMLHttpRequest();
+//       xhr.open("GET", url);
+//       xhr.onload = () => resolve(xhr.responseText);
+//       xhr.onerror = () => reject("Request failed");
+//       xhr.send();
+//     });
+//   }
   
-  fetchData("https://jsonplaceholder.typicode.com/posts/1")
+//   fetchData("https://jsonplaceholder.typicode.com/posts/1")
+//     .then(result => console.log(result))
+//     .catch(error => console.log(error));
+  
+
+
+//10. Promise.finally() Example
+
+let examplePromise = new Promise((resolve, reject) => {
+    let isSuccess = true;
+    if (isSuccess) {
+      resolve("Success!");
+    } else {
+      reject("Failed!");
+    }
+  });
+  
+  examplePromise
     .then(result => console.log(result))
-    .catch(error => console.log(error));
+    .catch(error => console.log(error))
+    .finally(() => console.log("Promise completed.")); // This runs whether resolved or rejected.
   
