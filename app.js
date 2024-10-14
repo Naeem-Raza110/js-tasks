@@ -998,20 +998,38 @@
 
 
 //7. Promise.race() Example
-let p1 = new Promise((resolve) => setTimeout(() => resolve("First!"), 500));
-let p2 = new Promise((resolve) => setTimeout(() => resolve("Second!"), 1000));
+// let p1 = new Promise((resolve) => setTimeout(() => resolve("First!"), 500));
+// let p2 = new Promise((resolve) => setTimeout(() => resolve("Second!"), 1000));
 
-Promise.race([p1, p2])
-  .then(result => console.log(result)); // Output: "First!"
+// Promise.race([p1, p2])
+//   .then(result => console.log(result)); // Output: "First!"
 
 
   //8. Rejecting a Promise
 
-  let rejectPromise = new Promise((resolve, reject) => {
-    reject("Error occurred");
-  });
+//   let rejectPromise = new Promise((resolve, reject) => {
+//     reject("Error occurred");
+//   });
   
-  rejectPromise
+//   rejectPromise
+//     .then(result => console.log(result))
+//     .catch(error => console.log(error)); // Output: "Error occurred"
+  
+
+
+//9. Promise with AJAX (XHR Request)
+
+function fetchData(url) {
+    return new Promise((resolve, reject) => {
+      let xhr = new XMLHttpRequest();
+      xhr.open("GET", url);
+      xhr.onload = () => resolve(xhr.responseText);
+      xhr.onerror = () => reject("Request failed");
+      xhr.send();
+    });
+  }
+  
+  fetchData("https://jsonplaceholder.typicode.com/posts/1")
     .then(result => console.log(result))
-    .catch(error => console.log(error)); // Output: "Error occurred"
+    .catch(error => console.log(error));
   
