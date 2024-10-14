@@ -974,15 +974,24 @@
 
 ///5. Promise with async/await Syntax
 
-async function fetchData() {
-    try {
-      let response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
-      let data = await response.json();
-      console.log(data);
-    } catch (error) {
-      console.log("Error:", error);
-    }
-  }
+// async function fetchData() {
+//     try {
+//       let response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+//       let data = await response.json();
+//       console.log(data);
+//     } catch (error) {
+//       console.log("Error:", error);
+//     }
+//   }
   
-  fetchData();
+//   fetchData();
   
+
+///6. Promise.all() Example
+let p1 = Promise.resolve(10);
+let p2 = new Promise((resolve) => setTimeout(() => resolve(20), 1000));
+let p3 = Promise.resolve(30);
+
+Promise.all([p1, p2, p3])
+  .then(values => console.log(values)) // Output: [10, 20, 30]
+  .catch(error => console.log(error));
