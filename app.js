@@ -988,10 +988,20 @@
   
 
 ///6. Promise.all() Example
-let p1 = Promise.resolve(10);
-let p2 = new Promise((resolve) => setTimeout(() => resolve(20), 1000));
-let p3 = Promise.resolve(30);
+// let p1 = Promise.resolve(10);
+// let p2 = new Promise((resolve) => setTimeout(() => resolve(20), 1000));
+// let p3 = Promise.resolve(30);
 
-Promise.all([p1, p2, p3])
-  .then(values => console.log(values)) // Output: [10, 20, 30]
-  .catch(error => console.log(error));
+// Promise.all([p1, p2, p3])
+//   .then(values => console.log(values)) // Output: [10, 20, 30]
+//   .catch(error => console.log(error));
+
+
+//7. Promise.race() Example
+let p1 = new Promise((resolve) => setTimeout(() => resolve("First!"), 500));
+let p2 = new Promise((resolve) => setTimeout(() => resolve("Second!"), 1000));
+
+Promise.race([p1, p2])
+  .then(result => console.log(result)); // Output: "First!"
+
+  
