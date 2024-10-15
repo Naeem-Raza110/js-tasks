@@ -1029,10 +1029,24 @@
 //10 examples of using async/await  illustrating how to work with asynchronous operations more cleanly:
 
 ///1. Basic async/await Example
-async function getData() {
-  return "Hello, World!";
+// async function getData() {
+//   return "Hello, World!";
+// }
+
+// getData().then(data => console.log(data)); // Output: "Hello, World!"
+
+
+
+//2. Using await with setTimeout
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-getData().then(data => console.log(data)); // Output: "Hello, World!"
+async function delayedMessage() {
+  console.log("Waiting...");
+  await delay(2000); // wait for 2 seconds
+  console.log("2 seconds passed!");
+}
 
+delayedMessage();
 
