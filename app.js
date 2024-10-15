@@ -1038,15 +1038,24 @@
 
 
 //2. Using await with setTimeout
-function delay(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+// function delay(ms) {
+//   return new Promise(resolve => setTimeout(resolve, ms));
+// }
+
+// async function delayedMessage() {
+//   console.log("Waiting...");
+//   await delay(2000); // wait for 2 seconds
+//   console.log("2 seconds passed!");
+// }
+
+// delayedMessage();
+
+// 3. Fetching Data from an API
+
+async function fetchData() {
+  const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+  const data = await response.json();
+  console.log(data);
 }
 
-async function delayedMessage() {
-  console.log("Waiting...");
-  await delay(2000); // wait for 2 seconds
-  console.log("2 seconds passed!");
-}
-
-delayedMessage();
-
+fetchData();
