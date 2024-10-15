@@ -1052,10 +1052,24 @@
 
 // 3. Fetching Data from an API
 
-async function fetchData() {
-  const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
-  const data = await response.json();
-  console.log(data);
+// async function fetchData() {
+//   const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+//   const data = await response.json();
+//   console.log(data);
+// }
+
+// fetchData();
+
+// 4. Error Handling with try/catch
+
+async function getDataWithErrorHandling() {
+  try {
+    let response = await fetch('https://nonexistent-api.com/data');
+    let data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.log("Error:", error.message);
+  }
 }
 
-fetchData();
+getDataWithErrorHandling();
