@@ -1062,14 +1062,28 @@
 
 // 4. Error Handling with try/catch
 
-async function getDataWithErrorHandling() {
-  try {
-    let response = await fetch('https://nonexistent-api.com/data');
-    let data = await response.json();
-    console.log(data);
-  } catch (error) {
-    console.log("Error:", error.message);
-  }
+// async function getDataWithErrorHandling() {
+//   try {
+//     let response = await fetch('https://nonexistent-api.com/data');
+//     let data = await response.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.log("Error:", error.message);
+//   }
+// }
+
+// getDataWithErrorHandling();
+
+
+// 5. async/await with Multiple Promises
+
+async function getMultipleData() {
+  const [post1, post2] = await Promise.all([
+    fetch('https://jsonplaceholder.typicode.com/posts/1').then(res => res.json()),
+    fetch('https://jsonplaceholder.typicode.com/posts/2').then(res => res.json())
+  ]);
+
+  console.log(post1, post2);
 }
 
-getDataWithErrorHandling();
+getMultipleData();
