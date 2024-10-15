@@ -875,14 +875,11 @@
 //       console.log(error);
 //     });
 
-
-
-
 // let examplePromise =  Promise((resolve, reject) => {
 //     examplePromise = "true ";
 //     console.log("Promise Status: Pending...");
 //     if (true) {
-//         console.log("Promise Status: Resolved"); 
+//         console.log("Promise Status: Resolved");
 //     }
 //     else (reject)
 //     console.log("Promise Status: Rejected");
@@ -895,12 +892,6 @@
 //     console.log("Promise Status: Rejected");
 //     console.log(error);
 //   });
-
-
-
-
-
-  
 
 // async function fetchApiData() {
 //   try {
@@ -917,10 +908,6 @@
 // }
 // fetchApiData();
 
-
-
-
-
 ///10 examples of JavaScript promises to help you understand how they work:
 
 //1. Basic Promise Example
@@ -932,13 +919,10 @@
 //       reject("Task failed");
 //     }
 //   });
-  
+
 //   myPromise
 //     .then(result => console.log(result))
 //     .catch(error => console.log(error));
-  
-
-
 
 ///2. Promise with setTimeout
 
@@ -947,30 +931,24 @@
 //       resolve("Executed after 2 seconds");
 //     }, 2000);
 //   });
-  
-//   delayedPromise.then(result => console.log(result));
-  
 
+//   delayedPromise.then(result => console.log(result));
 
 ///3. Chaining Promises
 // let chainPromise = new Promise((resolve) => {
 //     resolve(10);
 //   });
-  
+
 //   chainPromise
 //     .then(result => result * 2)
 //     .then(result => result + 5)
 //     .then(result => console.log(result)); // Output: 25
-  
-
 
 /////4. Promise with fetch API
 // fetch('https://jsonplaceholder.typicode.com/posts/1')
 //   .then(response => response.json())
 //   .then(data => console.log(data))
 //   .catch(error => console.log("Fetch error: ", error));
-
-
 
 ///5. Promise with async/await Syntax
 
@@ -983,9 +961,8 @@
 //       console.log("Error:", error);
 //     }
 //   }
-  
+
 //   fetchData();
-  
 
 ///6. Promise.all() Example
 // let p1 = Promise.resolve(10);
@@ -996,7 +973,6 @@
 //   .then(values => console.log(values)) // Output: [10, 20, 30]
 //   .catch(error => console.log(error));
 
-
 //7. Promise.race() Example
 // let p1 = new Promise((resolve) => setTimeout(() => resolve("First!"), 500));
 // let p2 = new Promise((resolve) => setTimeout(() => resolve("Second!"), 1000));
@@ -1004,18 +980,15 @@
 // Promise.race([p1, p2])
 //   .then(result => console.log(result)); // Output: "First!"
 
-
-  //8. Rejecting a Promise
+//8. Rejecting a Promise
 
 //   let rejectPromise = new Promise((resolve, reject) => {
 //     reject("Error occurred");
 //   });
-  
+
 //   rejectPromise
 //     .then(result => console.log(result))
 //     .catch(error => console.log(error)); // Output: "Error occurred"
-  
-
 
 //9. Promise with AJAX (XHR Request)
 
@@ -1028,26 +1001,38 @@
 //       xhr.send();
 //     });
 //   }
-  
+
 //   fetchData("https://jsonplaceholder.typicode.com/posts/1")
 //     .then(result => console.log(result))
 //     .catch(error => console.log(error));
-  
-
 
 //10. Promise.finally() Example
 
-let examplePromise = new Promise((resolve, reject) => {
-    let isSuccess = true;
-    if (isSuccess) {
-      resolve("Success!");
-    } else {
-      reject("Failed!");
-    }
-  });
-  
-  examplePromise
-    .then(result => console.log(result))
-    .catch(error => console.log(error))
-    .finally(() => console.log("Promise completed.")); // This runs whether resolved or rejected.
-  
+// let examplePromise = new Promise((resolve, reject) => {
+//     let isSuccess = true;
+//     if (isSuccess) {
+//       resolve("Success!");
+//     } else {
+//       reject("Failed!");
+//     }
+//   });
+
+//   examplePromise
+//     .then(result => console.log(result))
+//     .catch(error => console.log(error))
+//     .finally(() => console.log("Promise completed.")); // This runs whether resolved or rejected.
+
+
+
+
+
+//10 examples of using async/await  illustrating how to work with asynchronous operations more cleanly:
+
+///1. Basic async/await Example
+async function getData() {
+  return "Hello, World!";
+}
+
+getData().then(data => console.log(data)); // Output: "Hello, World!"
+
+
